@@ -1,0 +1,27 @@
+{
+  "model": "eleven_multilingual_v2",
+  "maxSpeedUp": 1.25,
+  "voices": {
+    "narrator": {
+      "description": "고정 나레이션 · 20대 중반 남자 · 차분함 · 보통 속도",
+      "voiceId": "",
+      "settings": { "stability": 0.6, "similarity_boost": 0.75, "style": 0.15, "speed": 1.0 }
+    },
+    "A": {
+      "description": "인물 대사 A · 20대 중반 남자 · 다정함",
+      "voiceId": "",
+      "settings": { "stability": 0.45, "similarity_boost": 0.75, "style": 0.35, "speed": 1.0 }
+    },
+    "B": {
+      "description": "인물 대사 B · 20대 중반 여자 · 다정함",
+      "voiceId": "",
+      "settings": { "stability": 0.45, "similarity_boost": 0.75, "style": 0.35, "speed": 1.0 }
+    }
+  },
+  "styles": {
+    "monologue": {
+      "description": "B의 독백: 더 낮고 느리고 속삭이듯",
+      "settings": { "stability": 0.7, "style": 0.1, "speed": 0.92 }
+    }
+  }
+}

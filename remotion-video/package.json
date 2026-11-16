@@ -10,6 +10,8 @@
   "private": true,
   "dependencies": {
     "@remotion/cli": "4.0.543",
+    "@remotion/media": "4.0.543",
+    "mediabunny": "1.64.0",
     "react": "19.3.1",
     "react-dom": "19.3.1",
     "remotion": "4.0.543"
@@ -26,7 +28,10 @@
     "dev": "remotion studio",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "lint": "eslint src && tsc",
+    "narration": "node scripts/generate-narration.mjs",
+    "narration:voices": "node scripts/generate-narration.mjs --list-voices",
+    "render": "remotion render HaepariManGae out/해파리만개_주지스님.mp4"
   },
   "allowScripts": {
     "esbuild": false

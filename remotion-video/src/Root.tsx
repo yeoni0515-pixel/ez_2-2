@@ -1,9 +1,9 @@
-import { MyComposition } from "./Composition";
+import { HaepariManGaeComposition } from "./HaepariManGae";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
-      <MyComposition />
+      <HaepariManGaeComposition />
     </>
   );
 };
