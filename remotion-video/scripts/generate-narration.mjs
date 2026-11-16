@@ -5,7 +5,9 @@
 //   node scripts/generate-narration.mjs --add <public_owner_id> <voice_id> <이름>
 //                                                      공유 음성을 내 라이브러리에 추가
 //
-// 필요: ELEVENLABS_API_KEY 환경 변수, ffmpeg/ffprobe
+// 필요: ffmpeg/ffprobe, 그리고 voices.json의 provider에 따라
+//   "edge"       → 무료 Edge 음성: pip install edge-tts  (키 필요 없음)
+//   "elevenlabs" → ELEVENLABS_API_KEY 환경 변수
 //
 // 1. narration/script.json의 각 줄을 narration/voices.json의 음성으로 생성
 //    (narration/cache/에 저장, 대사·음성·설정이 같으면 다시 호출하지 않음)
@@ -15,7 +17,7 @@
 
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, renameSync, statSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
 const root = path.resolve(import.meta.dirname, "..");
@@ -72,8 +74,9 @@ const cfg = JSON.parse(readFileSync(p("narration/voices.json"), "utf8"));
 const gap = script.minGapSeconds;
 const lines = [...script.lines].sort((a, b) => a.start - b.start);
 
+const provider = cfg.provider;
 for (const [name, v] of Object.entries(cfg.voices)) {
-  if (!v.voiceId && lines.some((l) => l.voice === name)) {
+  if (provider === "elevenlabs" && !v.elevenlabs.voiceId && lines.some((l) => l.voice === name)) {
     console.error(`narration/voices.json의 "${name}" voiceId가 비어 있습니다. --list-voices로 고르세요.`);
     process.exit(1);
   }
@@ -101,26 +104,43 @@ const report = [];
 
 for (let i = 0; i < lines.length; i++) {
   const line = lines[i];
-  const voice = cfg.voices[line.voice];
-  const settings = { ...voice.settings, ...(line.style ? cfg.styles[line.style].settings : {}) };
-  const body = {
-    text: line.text,
-    model_id: cfg.model,
-    voice_settings: settings,
-    previous_text: lines[i - 1]?.voice === line.voice ? lines[i - 1].text : undefined,
-    next_text: lines[i + 1]?.voice === line.voice ? lines[i + 1].text : undefined,
-  };
-  const hash = createHash("sha1").update(JSON.stringify([voice.voiceId, body])).digest("hex").slice(0, 10);
+  const voice = cfg.voices[line.voice][provider];
+  const style = line.style ? cfg.styles[line.style][provider] : {};
+  let request;
+  if (provider === "edge") {
+    request = { text: line.text, ...voice, ...style };
+  } else {
+    request = {
+      voiceId: voice.voiceId,
+      text: line.text,
+      model_id: "eleven_multilingual_v2",
+      voice_settings: { ...voice.settings, ...style },
+      previous_text: lines[i - 1]?.voice === line.voice ? lines[i - 1].text : undefined,
+      next_text: lines[i + 1]?.voice === line.voice ? lines[i + 1].text : undefined,
+    };
+  }
+  const hash = createHash("sha1").update(JSON.stringify([provider, request])).digest("hex").slice(0, 10);
   const raw = p("narration/cache", `${String(line.id).padStart(2, "0")}-${hash}.mp3`);
 
-  if (!existsSync(raw)) {
+  if (!existsSync(raw) || statSync(raw).size === 0) {
+    const tmp = raw + ".part";
     process.stdout.write(`#${line.id} 생성 중… `);
-    const res = await api(
-      "POST",
-      `/v1/text-to-speech/${voice.voiceId}?output_format=mp3_44100_128`,
-      body,
-    );
-    writeFileSync(raw, Buffer.from(await res.arrayBuffer()));
+    if (provider === "edge") {
+      const edgeArgs = ["--voice", request.voice, "--text", request.text, "--write-media", tmp];
+      for (const k of ["rate", "pitch", "volume"]) {
+        if (request[k]) edgeArgs.push(`--${k}=${request[k]}`);
+      }
+      // 프록시 뒤(회사·클라우드)에서는 edge-tts가 환경 변수를 안 읽으므로 직접 넘김
+      const proxy = process.env.HTTPS_PROXY || process.env.https_proxy;
+      if (proxy) edgeArgs.push("--proxy", proxy);
+      execFileSync(process.env.EDGE_TTS ?? "edge-tts", edgeArgs, { stdio: ["ignore", "ignore", "pipe"] });
+    } else {
+      const { voiceId, ...body } = request;
+      const res = await api("POST", `/v1/text-to-speech/${voiceId}?output_format=mp3_44100_128`, body);
+      writeFileSync(tmp, Buffer.from(await res.arrayBuffer()));
+    }
+    if (statSync(tmp).size === 0) throw new Error(`#${line.id} 음성이 비어 있습니다`);
+    renameSync(tmp, raw);
     console.log("완료");
   }
 

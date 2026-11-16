@@ -1,1 +1,532 @@
-[]
+[
+  {
+    "id": 1,
+    "voice": "narrator",
+    "text": "해파리 만개",
+    "start": 0,
+    "end": 2,
+    "file": "narration/1.mp3",
+    "duration": 0.888163,
+    "speed": 1
+  },
+  {
+    "id": 2,
+    "voice": "narrator",
+    "text": "AI 덕분에 우리의 삶은 더 편리해지고",
+    "start": 4,
+    "end": 7,
+    "file": "narration/2.mp3",
+    "duration": 2.742857,
+    "speed": 1
+  },
+  {
+    "id": 3,
+    "voice": "narrator",
+    "text": "짧은 시간에 더 많은 일을 할 수 있게 됐습니다.",
+    "start": 9,
+    "end": 12,
+    "file": "narration/3.mp3",
+    "duration": 2.977959,
+    "speed": 1
+  },
+  {
+    "id": 4,
+    "voice": "narrator",
+    "text": "기술이 우리의 예측과 통제를 넘어설 만큼 발전한다면",
+    "start": 14,
+    "end": 17,
+    "file": "narration/4.mp3",
+    "duration": 3.004082,
+    "speed": 1.227755
+  },
+  {
+    "id": 5,
+    "voice": "narrator",
+    "text": "우리는 무엇에 가치를 두고 살아가야 할까요?",
+    "start": 18,
+    "end": 22,
+    "file": "narration/5.mp3",
+    "duration": 2.690612,
+    "speed": 1
+  },
+  {
+    "id": 6,
+    "voice": "narrator",
+    "text": "해파리 만개는 여섯 편의 단편을 엮은 소설집입니다.",
+    "start": 23,
+    "end": 28,
+    "file": "narration/6.mp3",
+    "duration": 3.578776,
+    "speed": 1
+  },
+  {
+    "id": 7,
+    "voice": "narrator",
+    "text": "서로 다른 세계를 그리는 이야기들은",
+    "start": 29,
+    "end": 32,
+    "file": "narration/7.mp3",
+    "duration": 2.220408,
+    "speed": 1
+  },
+  {
+    "id": 8,
+    "voice": "narrator",
+    "text": "우리가 존재의 가치를 판단하는 방식을 돌아보게 합니다.",
+    "start": 33,
+    "end": 38,
+    "file": "narration/8.mp3",
+    "duration": 3.369796,
+    "speed": 1
+  },
+  {
+    "id": 9,
+    "voice": "narrator",
+    "text": "그 중 해파리 만개에 관한 기록을 따라가 보겠습니다.",
+    "start": 39,
+    "end": 44,
+    "file": "narration/9.mp3",
+    "duration": 3.265306,
+    "speed": 1
+  },
+  {
+    "id": 10,
+    "voice": "narrator",
+    "text": "앤트로픽은 투자설명서에서 안전장치와 감독, 보안이 불충분한 고도 AI가",
+    "start": 45,
+    "end": 50,
+    "file": "narration/10.mp3",
+    "duration": 5.01551,
+    "speed": 1.1023673999999999
+  },
+  {
+    "id": 11,
+    "voice": "narrator",
+    "text": "인류에 심각한 위험을 가져올 가능성을 언급합니다.",
+    "start": 51,
+    "end": 55,
+    "file": "narration/11.mp3",
+    "duration": 3.213061,
+    "speed": 1
+  },
+  {
+    "id": 12,
+    "voice": "narrator",
+    "text": "이 소설은 다른 질문을 던집니다.",
+    "start": 56,
+    "end": 58,
+    "file": "narration/12.mp3",
+    "duration": 1.985306,
+    "speed": 1.149388
+  },
+  {
+    "id": 14,
+    "voice": "narrator",
+    "text": "편리함을 위한 시스템이 삶의 기준까지 정한다면?",
+    "start": 60,
+    "end": 64,
+    "file": "narration/14.mp3",
+    "duration": 3.030204,
+    "speed": 1
+  },
+  {
+    "id": 15,
+    "voice": "narrator",
+    "text": "작품 속 도시는 AI 시스템 '시놉시스'의 관리와 감시 아래 있습니다.",
+    "start": 66,
+    "end": 69,
+    "file": "narration/15.mp3",
+    "duration": 3.578776,
+    "speed": 1.25
+  },
+  {
+    "id": 16,
+    "voice": "narrator",
+    "text": "여기에 연결된 시노봇은 거리를 청소하고 질서를 유지하지만",
+    "start": 71,
+    "end": 74,
+    "file": "narration/16.mp3",
+    "duration": 3.291429,
+    "speed": 1.25
+  },
+  {
+    "id": 17,
+    "voice": "narrator",
+    "text": "사람들의 일상도 지켜봅니다.",
+    "start": 76,
+    "end": 78,
+    "file": "narration/17.mp3",
+    "duration": 1.959184,
+    "speed": 1
+  },
+  {
+    "id": 18,
+    "voice": "narrator",
+    "text": "칩을 이식한 사람이 취업에서 유리한 사회",
+    "start": 80,
+    "end": 83,
+    "file": "narration/18.mp3",
+    "duration": 2.847347,
+    "speed": 1
+  },
+  {
+    "id": 19,
+    "voice": "narrator",
+    "text": "원치 않더라도, 기회를 놓치지 않기 위해 이식을 고민하게 됩니다.",
+    "start": 85,
+    "end": 90,
+    "file": "narration/19.mp3",
+    "duration": 4.649796,
+    "speed": 1
+  },
+  {
+    "id": 20,
+    "voice": "narrator",
+    "text": "편리함을 위한 기술은 어느새 선택의 기준이 됩니다.",
+    "start": 92,
+    "end": 95,
+    "file": "narration/20.mp3",
+    "duration": 3.004082,
+    "speed": 1.0710203333333335
+  },
+  {
+    "id": 21,
+    "voice": "narrator",
+    "text": "어느 날, 도시 곳곳에 해파리 형태의 비생물적 존재들이 나타납니다.",
+    "start": 100,
+    "end": 104,
+    "file": "narration/21.mp3",
+    "duration": 3.996735,
+    "speed": 1.15591825
+  },
+  {
+    "id": 22,
+    "voice": "narrator",
+    "text": "얇은 필름 같은 몸으로 허공을 떠돌며 점차 늘어납니다.",
+    "start": 105,
+    "end": 109,
+    "file": "narration/22.mp3",
+    "duration": 3.552653,
+    "speed": 1
+  },
+  {
+    "id": 23,
+    "voice": "narrator",
+    "text": "효율과 기능으로 모든 것을 분류하던 도시에는, 설명하기 어려운 출현입니다.",
+    "start": 110,
+    "end": 114,
+    "file": "narration/23.mp3",
+    "duration": 4.022857,
+    "speed": 1.227755
+  },
+  {
+    "id": 24,
+    "voice": "narrator",
+    "text": "도시 곳곳에 나타난 해파리 형태의 비생물적 존재",
+    "start": 116,
+    "end": 119,
+    "file": "narration/24.mp3",
+    "duration": 3.004082,
+    "speed": 1.097143
+  },
+  {
+    "id": 25,
+    "voice": "narrator",
+    "text": "처음에는 낯설어 거리를 두던 사람들도, 조금씩 이 풍경을 바라봅니다.",
+    "start": 120,
+    "end": 124,
+    "file": "narration/25.mp3",
+    "duration": 4.075102,
+    "speed": 1.25
+  },
+  {
+    "id": 26,
+    "voice": "narrator",
+    "text": "무엇을 하는지 묻기 전에 그저 떠 있는 존재에 시선이 머뭅니다.",
+    "start": 126,
+    "end": 129,
+    "file": "narration/26.mp3",
+    "duration": 3.265306,
+    "speed": 1.25
+  },
+  {
+    "id": 27,
+    "voice": "narrator",
+    "text": "해파리가 달라진 걸까요, 아니면 바라보는 기준이 달라진 걸까요?",
+    "start": 130,
+    "end": 134,
+    "file": "narration/27.mp3",
+    "duration": 4.022857,
+    "speed": 1.1689795
+  },
+  {
+    "id": 28,
+    "voice": "narrator",
+    "text": "경계하던 시선이, 머무르는 시선으로",
+    "start": 136,
+    "end": 138,
+    "file": "narration/28.mp3",
+    "duration": 2.429388,
+    "speed": 1.25
+  },
+  {
+    "id": 29,
+    "voice": "narrator",
+    "text": "바다에도 해파리가 대규모로 모이거나 늘어나는 '해파리 만개'가 있습니다.",
+    "start": 139,
+    "end": 143,
+    "file": "narration/29.mp3",
+    "duration": 4.022857,
+    "speed": 1.110204
+  },
+  {
+    "id": 30,
+    "voice": "narrator",
+    "text": "수온, 먹이, 주변 환경 등 여러 조건이 작용하고, 종과 해역에 따라 양상도 다릅니다.",
+    "start": 145,
+    "end": 149,
+    "file": "narration/30.mp3",
+    "duration": 4.832653,
+    "speed": 1.540136041666663
+  },
+  {
+    "id": 31,
+    "voice": "narrator",
+    "text": "실제 해파리는 먹이망의 일부입니다.",
+    "start": 150,
+    "end": 152,
+    "file": "narration/31.mp3",
+    "duration": 2.011429,
+    "speed": 1.214694
+  },
+  {
+    "id": 32,
+    "voice": "narrator",
+    "text": "작품은 이 이름을 빌려 우리가 가치를 판단하는 기준을 묻습니다.",
+    "start": 153,
+    "end": 157,
+    "file": "narration/32.mp3",
+    "duration": 4.022857,
+    "speed": 1.0187755
+  },
+  {
+    "id": 33,
+    "voice": "A",
+    "text": "해파리들이 내 생각에 장난을 쳤거든.",
+    "start": 165,
+    "end": 166,
+    "file": "narration/33.mp3",
+    "duration": 1.828571,
+    "speed": 1.6253966666666564
+  },
+  {
+    "id": 34,
+    "voice": "B",
+    "text": "무슨 생각?",
+    "start": 167,
+    "end": 169,
+    "file": "narration/34.mp3",
+    "duration": 0.757551,
+    "speed": 1
+  },
+  {
+    "id": 35,
+    "voice": "A",
+    "text": "능력만이 가치있다는 생각.",
+    "start": 170,
+    "end": 172,
+    "file": "narration/35.mp3",
+    "duration": 2.011429,
+    "speed": 1.057959
+  },
+  {
+    "id": 36,
+    "voice": "B",
+    "text": "나는 흘러가는 해파리들을 보았다.",
+    "start": 175,
+    "end": 177,
+    "file": "narration/36.mp3",
+    "duration": 2.037551,
+    "speed": 1.25
+  },
+  {
+    "id": 37,
+    "voice": "B",
+    "text": "물 속에 잠긴 것처럼 숨이 막히는데, 이상하게 무언가에서 해방된 기분이 든다.",
+    "start": 179,
+    "end": 182,
+    "file": "narration/37.mp3",
+    "duration": 4.858776,
+    "speed": 1.25
+  },
+  {
+    "id": 38,
+    "voice": "B",
+    "text": "억죄된 것들, 도시의 원칙들.",
+    "start": 185,
+    "end": 187,
+    "file": "narration/38.mp3",
+    "duration": 2.298776,
+    "speed": 1.25
+  },
+  {
+    "id": 39,
+    "voice": "B",
+    "text": "그게 정확히 무엇인지 알 수 없다.",
+    "start": 188,
+    "end": 190,
+    "file": "narration/39.mp3",
+    "duration": 2.037551,
+    "speed": 1.214694
+  },
+  {
+    "id": 40,
+    "voice": "B",
+    "text": "하지만 능력만이 가치 있는 게 아니라면, 무엇도 할 수 없는 것은 어떤 가치가 있는데?",
+    "start": 194,
+    "end": 200,
+    "file": "narration/40.mp3",
+    "duration": 6.008163,
+    "speed": 1.0405441666666666
+  },
+  {
+    "id": 41,
+    "voice": "B",
+    "text": "이 해파리들은 아무런 기능이 없어. 능력도 없고, 아무것도 할 수 없잖아.",
+    "start": 203,
+    "end": 207,
+    "file": "narration/41.mp3",
+    "duration": 5.172245,
+    "speed": 1.25
+  },
+  {
+    "id": 42,
+    "voice": "B",
+    "text": "그냥 위아래로 움직이고, 부유하고,",
+    "start": 209,
+    "end": 214,
+    "file": "narration/42.mp3",
+    "duration": 2.873469,
+    "speed": 1
+  },
+  {
+    "id": 44,
+    "voice": "B",
+    "text": "존재하는 게 다인걸.",
+    "start": 215,
+    "end": 218,
+    "file": "narration/44.mp3",
+    "duration": 1.515102,
+    "speed": 1
+  },
+  {
+    "id": 45,
+    "voice": "B",
+    "text": "무쓸모한 것들이 도시를 가득 채우면, 뭘 할 수 있는데?",
+    "start": 222,
+    "end": 226,
+    "file": "narration/45.mp3",
+    "duration": 3.918367,
+    "speed": 1
+  },
+  {
+    "id": 46,
+    "voice": "B",
+    "text": "그저 무쓸모한 게 늘어날 뿐인데...",
+    "start": 227,
+    "end": 231,
+    "file": "narration/46.mp3",
+    "duration": 2.063673,
+    "speed": 1
+  },
+  {
+    "id": 47,
+    "voice": "A",
+    "text": "그러면 세상을 멈춰 세울 수 있어.",
+    "start": 235,
+    "end": 238,
+    "file": "narration/47.mp3",
+    "duration": 2.716735,
+    "speed": 1
+  },
+  {
+    "id": 48,
+    "voice": "narrator",
+    "text": "이 대화는 우리에게도 이어집니다.",
+    "start": 243,
+    "end": 246,
+    "file": "narration/48.mp3",
+    "duration": 2.324898,
+    "speed": 1
+  },
+  {
+    "id": 49,
+    "voice": "narrator",
+    "text": "우리는 하루를 얼마나 많이 해냈는지로만 평가하고 있지는 않을까요?",
+    "start": 247,
+    "end": 251,
+    "file": "narration/49.mp3",
+    "duration": 3.996735,
+    "speed": 1.00571425
+  },
+  {
+    "id": 50,
+    "voice": "narrator",
+    "text": "아무것도 완성하지 못한 시간, 당장 성과로 설명할 수 없는 취향과 관계.",
+    "start": 253,
+    "end": 257,
+    "file": "narration/50.mp3",
+    "duration": 4.153469,
+    "speed": 1.25
+  },
+  {
+    "id": 51,
+    "voice": "narrator",
+    "text": "그 안에도 우리가 놓치고 있던 가치가 있을지 모릅니다.",
+    "start": 258,
+    "end": 262,
+    "file": "narration/51.mp3",
+    "duration": 3.526531,
+    "speed": 1
+  },
+  {
+    "id": 52,
+    "voice": "narrator",
+    "text": "우리는 스스로를 무엇으로 평가하고 있을까?",
+    "start": 263,
+    "end": 265,
+    "file": "narration/52.mp3",
+    "duration": 2.011429,
+    "speed": 1.25
+  },
+  {
+    "id": 53,
+    "voice": "narrator",
+    "text": "기술이 더 많은 일을 해내는 시대.",
+    "start": 267,
+    "end": 269,
+    "file": "narration/53.mp3",
+    "duration": 2.011429,
+    "speed": 1.044898
+  },
+  {
+    "id": 54,
+    "voice": "narrator",
+    "text": "잠시 멈춰, 우리가 소중하게 여기는 것을 바라봅니다.",
+    "start": 271,
+    "end": 274,
+    "file": "narration/54.mp3",
+    "duration": 3.056327,
+    "speed": 1.25
+  },
+  {
+    "id": 55,
+    "voice": "narrator",
+    "text": "우리는 무엇을 가치 있게 여기며 살아갈 것인가?",
+    "start": 277,
+    "end": 281,
+    "file": "narration/55.mp3",
+    "duration": 2.873469,
+    "speed": 1
+  }
+]
